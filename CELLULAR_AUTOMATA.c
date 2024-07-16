@@ -1,7 +1,9 @@
 // This program model's Wolfram's Cellular Automata
 
-// the rules:	000	001	010	011	100	101	110	111		where 0 is white, 1 is black
-//				 0   0   1   1   1   1   1   0
+// for rule 124, these are the rules:
+// 000    001    010    011    100    101    110    111
+//  0      0      1      1      1      1      1      0
+// where 0 is white, 1 is black
 
 // v2 starts to handle it as just one long string that we print off at the end
 // v3 makes a dynamic interpretation of which rule to use so we can change which rule we want
@@ -25,7 +27,7 @@
 void insertChar(char *string, char letter, int index)
 {
 	// adds the 'letter' into 'string' at position 'index'
-	// doesn't even need the length leshgo
+	// doesn't need the length
 	int i = index;
 	char memoryplace = letter;
 	char memorytake = string[i];
